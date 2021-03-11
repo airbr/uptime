@@ -1,7 +1,15 @@
 #!/bin/bash
 
+wflag=''
+
+while getopts 'abf:v' flag; do
+  case "${flag}" in
+    a) aflag='true' ;;
+  esac
+done
+
 date=$(date); 
-if [[ $* == *-w* ]]; then
+if [[ -n $aflag ]]; then
     filename="reports/$date-report.txt"
 else
   # Clear the report.txt file
