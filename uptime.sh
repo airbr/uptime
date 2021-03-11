@@ -16,6 +16,7 @@ while getopts 'af' flag; do
   case "${flag}" in
     a) aflag='true' ;;
     f) fflag='true' ;;
+    *) err "Unexpected flag"; exit 1 ;;
   esac
 done
 
