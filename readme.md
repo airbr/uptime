@@ -17,6 +17,6 @@ In my first commits to this project, I will be committing a simple bash script w
 
 # Goals
 
-* Write results in crude/basic tabular format to a file
+* Write results in crude/basic tabular format to a file.
+    *   Add command flag `-w` to write the report to a new dated file OR just overwrite a temp file
 * Write results to HTML
-*

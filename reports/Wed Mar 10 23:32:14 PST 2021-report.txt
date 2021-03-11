@@ -1,0 +1,5 @@
+Report generated on: Wed Mar 10 23:32:14 PST 2021 
+The curl command was successful for https://www.google.com. It exited with a status code of:HTTP/2 200 
+the curl command failed for https://www.thisdoesnotexistatall.com with: 6 
+The curl command was successful for https://www.amazon.com. It exited with a status code of:HTTP/2 503 
+The curl command was successful for https://www.netflix.com. It exited with a status code of:HTTP/2 405 
