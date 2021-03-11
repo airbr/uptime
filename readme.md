@@ -6,7 +6,13 @@ I am kind of just hacking at this as I go.
 
 # Usage
 
-`sh uptime.sh` 
+Generate a temporary report:
+
+`sh uptime.sh`
+
+Write report to a new file:
+
+`sh uptime.sh -a`
 
 ## Initial progress
 
