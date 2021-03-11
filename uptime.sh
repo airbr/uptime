@@ -36,7 +36,7 @@ failure=( );
 
 while IFS= read -r line; do
 
-    curl=$(curl -Is "$line");
+    curl=$(curl -Is --max-time 15 "$line");
     res=$?
     if test "$res" != "0"; then
         printf "the curl command failed for %s with: %s \n" "$line" "$res" | tee -a "$filename";
