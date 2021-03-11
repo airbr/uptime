@@ -6,7 +6,7 @@ if [[ $* == *-w* ]]; then
 else
   # Clear the report.txt file
     filename="reports/temp-report.txt"
-    cp /dev/null temp-report.txt;
+    cp /dev/null reports/temp-report.txt;
 fi
 
 printf "Report generated on: %s \n" "$date" | tee -a "$filename";
