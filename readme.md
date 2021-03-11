@@ -6,7 +6,11 @@ I am kind of just hacking at this as I go.
 
 # Usage
 
-Generate a temporary report:
+
+1. Put your URL's in `urls.txt`;
+
+
+2. Generate a temporary report:
 
 `sh uptime.sh`
 

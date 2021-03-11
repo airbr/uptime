@@ -1,7 +1,16 @@
 #!/bin/bash
 
-wflag=''
+err() {
+  echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*" >&2
+}
 
+case "$(curl -s --max-time 2 -I http://google.com | sed 's/^[^ ]*  *\([0-9]\).*/\1/; 1q')" in
+  [23]) echo "HTTP connectivity is up";;
+  5) echo "The web proxy won't let us through";;
+  *) err "The network is down or very slow"; exit 1 ;;
+esac
+
+wflag=''
 while getopts 'abf:v' flag; do
   case "${flag}" in
     a) aflag='true' ;;
