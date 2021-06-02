@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/env bash
 
 err() {
   echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*" >&2
