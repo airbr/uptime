@@ -37,33 +37,27 @@ Write a crude formatted file by success/failure:
 Small batch of commits in March - picking it back up in May!
 
  * Passed initial Shellcheck
- * Tested on several urls
+ * Tested on a collection of URLs of the world's most visited sites. Most all were up as you would expect.
 
  Development:
 
 Just a few shellcheck errors to follow up on after paring it down.
  ```
-bmm at bmms-MacBook-Pro in ~/zprojects/uptime on development*
 $ shellcheck uptime.sh 
-
 In uptime.sh line 20:
     curl=$(curl -Is --max-time 15 "$line");
     ^--^ SC2034: curl appears unused. Verify use (or export if used externally).
-
-
 In uptime.sh line 23:
       printf "$line $res No";
              ^-------------^ SC2059: Don't use variables in the printf format string. Use printf '..%s..' "$foo".
-
-
 In uptime.sh line 26:
       printf "$line $res Yes";
              ^--------------^ SC2059: Don't use variables in the printf format string. Use printf '..%s..' "$foo".
-```
-
 For more information:
   https://www.shellcheck.net/wiki/SC2034 -- curl appears unused. Verify use (...
   https://www.shellcheck.net/wiki/SC2059 -- Don't use variables in the printf...
+```
+
 
 # Goals
 
