@@ -1,5 +1,5 @@
 #!/bin/env bash
-set -euo pipefail;
+set -uo pipefail;
 
 err() {
   echo "[$(date +'%Y-%m-%dT%H:%M:%S%z')]: $*" >&2
