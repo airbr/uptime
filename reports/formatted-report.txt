@@ -1,6 +1,0 @@
-https://www.google.com
-https://www.amazon.com
-https://www.netflix.com
-
-FAILURE:
-https://www.thisdoesnotexistatall.com
